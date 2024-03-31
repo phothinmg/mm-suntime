@@ -1,0 +1,103 @@
+const data = [
+  {
+    city: "Nay Pyi Daw",
+    citymm: "နေပြည်တော်",
+    latitude: 19.76426959059103,
+    longitude: 96.0787901880646,
+    timezone: 6.5,
+  },
+  {
+    city: "Yangon",
+    citymm: "ရန်ကုန်",
+    latitude: 16.843019937737683,
+    longitude: 96.15821203942693,
+    timezone: 6.5,
+  },
+  {
+    city: "Mandalay",
+    citymm: "မန္တလေး",
+    latitude: 21.963584835420896,
+    longitude: 96.08440368824961,
+    timezone: 6.5,
+  },
+  {
+    city: "Monywa",
+    citymm: "မုံရွာ",
+    latitude: 22.121057779609323,
+    longitude: 95.15280257043605,
+    timezone: 6.5,
+  },
+  {
+    city: "Pathein",
+    citymm: "ပုသိမ်",
+    latitude: 16.783431381189967,
+    longitude: 94.72187792413753,
+    timezone: 6.5,
+  },
+  {
+    city: "Magway",
+    citymm: "မကွေး",
+    latitude: 20.1545539857668,
+    longitude: 94.9453105738894,
+    timezone: 6.5,
+  },
+  {
+    city: "Bago",
+    citymm: "ပဲခူး",
+    latitude: 20.1545539857668,
+    longitude: 96.46703029945,
+    timezone: 6.5,
+  },
+  {
+    city: "Dawei",
+    citymm: "ထားဝယ်",
+    latitude: 14.08259028937109,
+    longitude: 98.19356901660903,
+    timezone: 6.5,
+  },
+  {
+    city: "Myitkyina",
+    citymm: "မြစ်ကြီးနား",
+    latitude: 25.547691521130595,
+    longitude: 97.27262049197644,
+    timezone: 6.5,
+  },
+  {
+    city: "Hakha",
+    citymm: "ဟားခါး",
+    latitude: 22.64245099779985,
+    longitude: 93.60420222019783,
+    timezone: 6.5,
+  },
+  {
+    city: "Hpa-An",
+    citymm: "ဘားအံ",
+    latitude: 16.87732198060054,
+    longitude: 97.64365335697266,
+    timezone: 6.5,
+  },
+  {
+    city: "Taunggyi",
+    citymm: "တောင်ကြီး",
+    latitude: 20.79077515436522,
+    longitude: 97.03366156892119,
+    timezone: 6.5,
+  },
+
+  {
+    city: "Lashio",
+    citymm: "နေပြည်တော်",
+    latitude: 22.967982399898016,
+    longitude: 97.75290018248508,
+    timezone: 6.5,
+  },
+  {
+    city: "Mawlamyine",
+    citymm: "မော်လမြိုင်",
+    latitude: 16.45471871530237,
+    longitude: 97.64459517809713,
+    timezone: 6.5,
+  },
+];
+
+export default data;
