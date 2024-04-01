@@ -34,6 +34,8 @@ function daytime() {
     const dt = myDayTime(item.latitude, item.longitude, item.timezone);
     const dtt = {
       ct: item.city,
+      si: item.state_id,
+      st: item.state,
       sr: dt.sunrise,
       ss: dt.sunset,
       dt: dt.daytime,
@@ -69,9 +71,11 @@ function daytime() {
   <thead>
   <tr>
     <th class='text '>City</th>
-    <th class='number '>Sunrise</th>
-    <th class='number '>Sunset</th>
-    <th class='number '>Daytime</th>
+    <th class='text '>State ID</th>
+    <th class='text '>State</th>
+    <th class='text'>Sunrise</th>
+    <th class='text'>Sunset</th>
+    <th class='text'>Daytime</th>
   </tr>
   </thead>
   `;
@@ -83,9 +87,11 @@ function daytime() {
       return `
     <tr>
       <td class='text ' data-title='City'>${i.ct}</td>
-      <td class='number ' data-title='Sunrise'>${i.sr}</td>
-      <td  class='number ' data-title='Sunset'>${i.ss}</td>
-      <td class='number ' data-title='Daytime'>${i.dt}</td>
+      <td class='text ' data-title='State ID'>${i.si}</td>
+      <td class='text ' data-title='State'>${i.st}</td>
+      <td class='text ' data-title='Sunrise'>${i.sr}</td>
+      <td  class='text ' data-title='Sunset'>${i.ss}</td>
+      <td class='text ' data-title='Daytime'>${i.dt}</td>
     </tr>
     `;
     })

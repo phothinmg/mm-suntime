@@ -21,6 +21,7 @@
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^2.8.1",
     "style-loader": "^3.3.4",
+    "svg-inline-loader": "^0.8.2",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.3"

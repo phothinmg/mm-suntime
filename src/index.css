@@ -94,7 +94,11 @@ table.rg-table th.number,
 td.number {
   text-align: right;
 }
-
+.flag{
+  width: 20px;
+  height: 16px;
+  margin-top: 5px;
+}
 /* media queries */
 @media screen and (max-width: 600px) {
   .rg-container {
