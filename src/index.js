@@ -71,7 +71,6 @@ function daytime() {
   <thead>
   <tr>
     <th class='text '>City</th>
-    <th class='text '>State ID</th>
     <th class='text '>State</th>
     <th class='text'>Sunrise</th>
     <th class='text'>Sunset</th>
@@ -87,7 +86,6 @@ function daytime() {
       return `
     <tr>
       <td class='text ' data-title='City'>${i.ct}</td>
-      <td class='text ' data-title='State ID'>${i.si}</td>
       <td class='text ' data-title='State'>${i.st}</td>
       <td class='text ' data-title='Sunrise'>${i.sr}</td>
       <td  class='text ' data-title='Sunset'>${i.ss}</td>
