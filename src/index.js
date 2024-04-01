@@ -17,28 +17,16 @@ function daytime() {
     document.getElementById("dayt").innerHTML = `Daytime : ${userdt.daytime}`;
   });
   // --------------------------------------------------------------- //
-  const MYANMAR_TIMEZONE_OFFSET_MS = -390 * 60 * 1000; 
+  const MYANMAR_TIMEZONE_OFFSET_MS = 390 * 60 * 1000;
   const dtt = new Date();
-  const utcnow = Date.UTC(
-    dtt.getFullYear(),
-    dtt.getMonth(),
-    dtt.getDate(),
-    dtt.getHours(),
-    dtt.getMinutes(),
-    dtt.getSeconds(),
-    dtt.getMilliseconds()
-  );
-  const mmloc = utcnow + MYANMAR_TIMEZONE_OFFSET_MS;
-  const mmdate = new Date(mmloc).toLocaleString(navigator.language, {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-  });
-  const mmtime = new Date(mmloc).toLocaleString(navigator.language, {
-   hour:"2-digit",
-   minute:"2-digit",
-   second:"2-digit"
-  });
+  const loct = dtt.getTime();
+  const loctzof = dtt.getTimezoneOffset() * 60 * 1000;
+  const utcn = loct + loctzof;
+  const mytime = utcn + MYANMAR_TIMEZONE_OFFSET_MS;
+  const mmm = new Date(mytime).toString().split(" ");
+  const mmdate = mmm.slice(1, 4).join("-");
+  const mmtime = mmm[4];
+  //-----------------------------------------------------
   const view = document.getElementById("v");
   view.innerHTML = "";
   let dat = [];
@@ -75,7 +63,9 @@ function daytime() {
   <br>
   <hr>
   <br>
-  <span class='rg-dek' style="font-weight: bold;">${mmdate}  -  ${mmtime}</span>
+  <span class='rg-dek' style="font-weight: bold;">${mmdate}</span>
+  <br>
+  <span class='rg-dek' style="font-size: small;">${mmtime}</span>
   <br>
   <hr>
   `;
