@@ -68,6 +68,7 @@ function daytime() {
   <br>
   <span class='rg-dek' style="font-weight: bold;">User's Location</span>
   <br>
+  <span class='rg-dek' style="font-size: small;">Timezone : ${usrtz}</span>
   <span class='rg-dek' style="font-size: small;" id="sr"></span>
   <span class='rg-dek' style="font-size: small;" id="ss"></span>
   <span class='rg-dek' style="font-size: small;" id="dayt"></span>
