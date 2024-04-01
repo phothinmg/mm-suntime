@@ -1,10 +1,13 @@
 /* 
+* These Codes are  base on ;
+*  https://gist.github.com/ruiokada/b28076d4911820ddcbbc
+*
 * Computations are based on the formulas found in:
- * https://gist.github.com/ruiokada/b28076d4911820ddcbbc
- * https://en.wikipedia.org/wiki/Julian_day#Converting_Julian_or_Gregorian_calendar_date_to_Julian_Day_Number
- * https://en.wikipedia.org/wiki/Sunrise_equation#Complete_calculation_on_Earth
- * https://en.wikipedia.org/wiki/Daytime
- * https://en.wikipedia.org/wiki/Equation_of_time
+* https://en.wikipedia.org/wiki/Julian_day#Converting_Julian_or_Gregorian_calendar_date_to_Julian_Day_Number
+* https://en.wikipedia.org/wiki/Sunrise_equation#Complete_calculation_on_Earth
+* https://en.wikipedia.org/wiki/Daytime
+* https://en.wikipedia.org/wiki/Equation_of_time
+*
  */
 
 const RADIANS_PER_DEGREE = Math.PI / 180.0;
@@ -37,6 +40,15 @@ const j_day =
   Math.floor(y / 400) -
   32045;
 
+/**
+ * Calculates the local sunrise and sunset times for a given latitude, longitude, and timezone.
+ *
+ * @param {number} latitude - The latitude of the location in degrees.
+ * @param {number} longitude - The longitude of the location in degrees.
+ * @param {number} [timezone] - The timezone offset in hours. If not provided, the current timezone offset will be used.
+ * @returns {Array} An array containing the local sunrise and sunset times in 24-hour format. If the sun does not rise or set on the given date, 
+ * the corresponding value will be -1.
+ */
 const sun = (latitude, longitude, timezone) => {
   const n_star = j_day - J2000 - longitude / 360.0;
   const n = Math.floor(n_star + 0.5);

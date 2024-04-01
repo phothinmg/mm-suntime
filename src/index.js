@@ -61,8 +61,6 @@ function daytime() {
   <span class='rg-dek' style="font-size: small;" id="dayt"></span>
   <br>
   <hr>
-  <br>
-  <span class='rg-dek' style="font-weight: bold;">${mmdate} (GMT+6:30)</span>
 
   `;
   tb.appendChild(capt);
