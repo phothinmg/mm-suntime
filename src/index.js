@@ -17,16 +17,27 @@ function daytime() {
     document.getElementById("dayt").innerHTML = `Daytime : ${userdt.daytime}`;
   });
   // --------------------------------------------------------------- //
-  const mmtz = 390;
-  const mmdate = new Date(Date.now() + mmtz * 60 * 1000).toLocaleString(
-    "en-US",
-    {
-      year: "numeric",
-      month: "short",
-      day: "2-digit",
-    }
+  const mmtz = -390 * 60 * 1000;
+  const dtt = new Date();
+  const utcnow = Date.UTC(
+    dtt.getFullYear(),
+    dtt.getMonth(),
+    dtt.getDate(),
+    dtt.getHours(),
+    dtt.getMinutes(),
+    dtt.getSeconds(),
+    dtt.getMilliseconds()
   );
-
+  const mmloc = mmtz + utcnow;
+  const mmdate = new Date(mmloc).toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
+  });
+  // const datsplit = mmdate.split(" ");
+  // const dateToShow = datsplit.slice(0,4).join(" ");
+  // console.log(dateToShow);
+  // console.log(new Date().toString());
   const view = document.getElementById("v");
   view.innerHTML = "";
   let dat = [];
@@ -50,7 +61,7 @@ function daytime() {
   capt.classList.add("rg-header");
   capt.innerHTML = `
   <span class='rg-hed'>Myanmar</span>
-	<span class='rg-dek'>Cities Day Time</span>
+	<span class='rg-dek'>Sunrise, sunset and time of day for cities</span>
   <br>
   <hr>
   <br>
@@ -61,7 +72,10 @@ function daytime() {
   <span class='rg-dek' style="font-size: small;" id="dayt"></span>
   <br>
   <hr>
-
+  <br>
+  <span class='rg-dek' style="font-weight: bold;">${mmdate} (GMT+0630)</span>
+  <br>
+  <hr>
   `;
   tb.appendChild(capt);
   const th = document.createElement("thead");

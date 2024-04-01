@@ -10,23 +10,23 @@ const __dirname = path.dirname(__filename);
 /** @type {import('webpack').Configuration} */
 
 const webpackConfig = {
-  mode: "production",
+  mode: "development",
   devtool: false,
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "mmsuntime.js",
   },
-  // devServer: {
-  //   static: {
-  //     directory: path.resolve(__dirname, "./dist"),
-  //   },
-  //   port: 3033,
-  //   open: true,
-  //   hot: true,
-  //   compress: true,
-  //   historyApiFallback: true,
-  // },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+    },
+    port: 3033,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -43,10 +43,10 @@ const webpackConfig = {
           },
         },
       },
-      // {
-      //   test: /\.json$/,
-      //   loader: "json-loader",
-      // },
+      {
+        test: /\.json$/,
+        loader: "json-loader",
+      },
     ],
   },
   plugins: [
@@ -56,7 +56,7 @@ const webpackConfig = {
       template: "./src/index.html",
     }),
     new MiniCssExtractPlugin(),
-    // new FaviconsWebpackPlugin("./src/mm.ico"),
+    new FaviconsWebpackPlugin("./src/mm.ico"),
   ],
 };
 
