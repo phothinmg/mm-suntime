@@ -19,7 +19,16 @@ const stobj = {
           name: "Bago Township",
           coordinates: [17.316667, 96.45],
           map_link: "https://maps.app.goo.gl/RqqgQfKQ3ZRNX1vR6",
-          villages: [],
+          village_tracts: [
+            {
+              Name: "Ah Htet Zaing Ga Naing Gyi",
+              coordinates:[17.355418884632467, 96.76200077838844],
+              map_link:"https://maps.app.goo.gl/wyK2S4NU8BgCcHF98",
+              villages:[
+                
+              ]
+            }
+          ],
         },
       ],
     },
