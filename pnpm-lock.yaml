@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  array-json:
+    specifier: ^0.2.1
+    version: 0.2.1
+
 devDependencies:
   '@babel/core':
     specifier: ^7.24.0
@@ -1907,6 +1912,10 @@ packages:
   /array-flatten@1.1.1:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
     dev: true
+
+  /array-json@0.2.1:
+    resolution: {integrity: sha512-B+V2i6S5G0AuKgWhM+PYZV/Rjc/flESqNzK9XGr2v6hwH/Fz2BptwztXzzmwnU72eqFRYRM/W0dDuZ/mfTmGGw==}
+    dev: false
 
   /author-regex@1.0.0:
     resolution: {integrity: sha512-KbWgR8wOYRAPekEmMXrYYdc7BRyhn2Ftk7KWfMUnQ43hFdojWEFRxhhRUm3/OFEdPa1r0KAvTTg9YQK57xTe0g==}

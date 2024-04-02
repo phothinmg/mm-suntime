@@ -1,0 +1,54 @@
+{
+    "id": "1bbd8556-84b2-4ebc-ab42-e8394a2bd93a",
+    "title": "Village Points  Sagaing Region PCode v9.5",
+    "name": "mimu-geonode-village-points-sagaing-region-pcode",
+    "notes": "Village locations (points) in Sagaing Region, based on the latest MIMU Pcode version 9.5. Place names from General Administration Department (GAD), are available in Myanmar Unicode. Transliteration in roman script by MIMU. Place names are in line with the general cartographic practice to reflect the names of such places as designated by the host governments. The United Nations encourages authorities to review place names which include terms that may be viewed or perceived as derogatory.",
+    "dataset_source": "Myanmar Information Management Unit (MIMU)",
+    "organization": "Myanmar Information Management Unit (MIMU)",
+    "dataset_date": "[2024-02-26T00:00:00 TO 2024-02-26T23:59:59]",
+    "last_modified": "2024-02-26T21:32:00",
+    "data_update_frequency": "As needed",
+    "groups": [
+        "Myanmar"
+    ],
+    "license_title": "Other",
+    "methodology": "Other",
+    "methodology_other": "The information contained on this product is provided \u201cas is\u201d, for reference purposes only, based on current available information. The United Nations and the MIMU specifically do not make any warranties or representations as to the accuracy or completeness of such information nor does it imply official endorsement or acceptance by the United Nations. Please share any errors or omissions via maps@themimu.info.",
+    "caveats": "This product has been prepared for operational purposes only, to support humanitarian and development activities in Myanmar. Copyright \u00a92020 Myanmar Information Management Unit. MIMU geospatial datasets cannot be used on online platform unless with prior written agreement from MIMU. MIMU products are not for sale and can be used free of charge with attribution. For more information see http://themimu.info/mimu-terms-conditions.",
+    "tags": [
+        "geodata",
+        "populated places-settlements"
+    ],
+    "resources": [
+        {
+            "created": "2023-07-04T03:02:51.523509",
+            "description": "Zipped Shapefile. Village locations (points) in Sagaing Region, based on the latest MIMU Pcode version 9.5. Place names from General Administration Department (GAD), are available in Myanmar Unicode. Transliteration in roman script by MIMU.",
+            "format": "SHP",
+            "download_url": "https://geonode.themimu.info/geoserver/wfs?format_options=charset:UTF-8&typename=geonode:mmr_sag_pplp2_250k_mimu_1&outputFormat=SHAPE-ZIP&version=1.0.0&service=WFS&request=GetFeature",
+            "id": "1ea130e9-43b8-4e87-b485-bf5e27ab1983",
+            "last_modified": "2024-02-26T21:32:00",
+            "metadata_modified": "2024-03-17T19:29:19.586479",
+            "microdata": false,
+            "dataset_id": "1bbd8556-84b2-4ebc-ab42-e8394a2bd93a",
+            "resource_type": "api",
+            "name": "Village Points  Sagaing Region PCode v9.5 shapefile",
+            "mimetype": null,
+            "size": null
+        },
+        {
+            "created": "2023-07-04T03:02:51.523518",
+            "description": "GeoJSON file. Village locations (points) in Sagaing Region, based on the latest MIMU Pcode version 9.5. Place names from General Administration Department (GAD), are available in Myanmar Unicode. Transliteration in roman script by MIMU.",
+            "format": "GeoJSON",
+            "download_url": "https://geonode.themimu.info/geoserver/wfs?srsName=EPSG%3A4326&typename=geonode:mmr_sag_pplp2_250k_mimu_1&outputFormat=json&version=1.0.0&service=WFS&request=GetFeature",
+            "id": "db1f858f-3659-4fd9-8b45-eae28b69c861",
+            "last_modified": "2024-02-26T21:32:00",
+            "metadata_modified": "2024-03-17T19:29:19.920912",
+            "microdata": false,
+            "dataset_id": "1bbd8556-84b2-4ebc-ab42-e8394a2bd93a",
+            "resource_type": "api",
+            "name": "Village Points  Sagaing Region PCode v9.5 geojson",
+            "mimetype": null,
+            "size": null
+        }
+    ]
+}
