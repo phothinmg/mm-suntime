@@ -47,9 +47,6 @@ setInterval(function () {
 const capt = document.createElement("caption");
 capt.classList.add("rg-header");
 capt.innerHTML = `
-  <h1 class='rg-hed'>Myanmar</h1>
-  <h2 class='rg-dek'>Sunrise, sunset and time of day for cities</h2>
-  <br>
   <hr>
   <br>
   <span class='rg-dek' style="font-weight: bold;">User's Location</span>
